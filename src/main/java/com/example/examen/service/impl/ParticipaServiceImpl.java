@@ -47,7 +47,6 @@ public class ParticipaServiceImpl implements ParticipaService {
         try {
             Participa participa = participaMapper.toEntity(participaDTO);
 
-            // 🔑 Seteamos las relaciones
             participa.setProyecto(proyecto);
             participa.setColaborador(colaborador);
 
@@ -73,7 +72,6 @@ public class ParticipaServiceImpl implements ParticipaService {
 
 
         try {
-            // 🔑 Actualizamos las relaciones
             existente.setProyecto(proyecto);
             existente.setColaborador(colaborador);
 
